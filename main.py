@@ -27,24 +27,24 @@ def get_tickets():
 
     # Mapear los parámetros de la solicitud a las columnas de la BD
     query_params = {
-        'ID': request.args.get('ID'),
-        'Titulo': request.args.get('Titulo'),
-        'Tipo de Ticket': request.args.get('Tipo de Ticket'),
-        'MAIL': request.args.get('MAIL'),
-        'ASIGNADO': request.args.get('ASIGNADO'),
-        'SUB_CATEGORIA': request.args.get('SUB_CATEGORIA'),
-        'CATEGORIA': request.args.get('CATEGORIA'),
-        'PRIORIDAD': request.args.get('PRIORIDAD'),
-        'EQUIPO_ASIGNADO': request.args.get('EQUIPO_ASIGNADO'),
-        'PROPIETARIO': request.args.get('PROPIETARIO'),
-        'Estado': request.args.get('Estado'),
-        'Fecha de Creación': request.args.get('Fecha de Creacion'),
-        'Fecha de Última Modificación': request.args.get('Fecha de Ultima Modificacion'),
-        'Fecha de Resolución': request.args.get('Fecha de Resolucion'),
-        'Días Transcurridos': request.args.get('Dias Transcurridos'),
-        'Cumple resolución': request.args.get('Cumple resolucion'),
-        'Cumple respuesta': request.args.get('Cumple respuesta'),
-        'Tiempo de resolución ANS': request.args.get('Tiempo de resolucion ANS')
+        'ID': request.args.get('id'),
+        'Titulo': request.args.get('ttulo'),
+        'Tipo de Ticket': request.args.get('tipo_ticket'),
+        'MAIL': request.args.get('mail'),
+        'ASIGNADO': request.args.get('asignado'),
+        'SUB_CATEGORIA': request.args.get('sub_categoria'),
+        'CATEGORIA': request.args.get('categoria'),
+        'PRIORIDAD': request.args.get('prioridad'),
+        'EQUIPO_ASIGNADO': request.args.get('equipo_asignado'),
+        'PROPIETARIO': request.args.get('propietario'),
+        'Estado': request.args.get('estado'),
+        'Fecha de Creación': request.args.get('fecha_creacin'),
+        'Fecha de Última Modificación': request.args.get('f_ultima_modificacion'),
+        'Fecha de Resolución': request.args.get('fecha_resolucin'),
+        'Días Transcurridos': request.args.get('dias_transcurridos'),
+        'Cumple resolución': request.args.get('cumpleresolucin'),
+        'Cumple respuesta': request.args.get('cumplerespuesta'),
+        'Tiempo de resolución ANS': request.args.get('tiemporesolucinans')
     }
 
     for key, value in query_params.items():
