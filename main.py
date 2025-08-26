@@ -21,7 +21,7 @@ def get_tickets():
         return jsonify({"error": f"Error de conexión a la base de datos: {str(e)}"}), 500
 
     # Construir la consulta SQL dinámicamente
-    base_query = "SELECT * FROM tickets"
+    base_query = "SELECT * FROM tickets_data WHERE"
     conditions = []
     params = []
 
