@@ -18,7 +18,7 @@ def get_tickets():
     try:
         connection = get_db_connection()
     except Exception as e:
-        return jsonify({"error": f"Error de conexi\u00f3n a la base de datos: {str(e)}"}), 500
+        return jsonify({"error": f"Error de conexión a la base de datos: {str(e)}"}), 500
 
     # Construir la consulta SQL dinámicamente
     base_query = "SELECT * FROM tickets_data"
@@ -68,7 +68,7 @@ def get_tickets():
         if tickets:
             return jsonify(tickets)
         else:
-            return jsonify({"mensaje": "No se encontraron tickets con los par\u00e1metros dados."}), 404
+            return jsonify({"mensaje": "No se encontraron tickets con los parametros dados."}), 404
 
     except Exception as e:
         return jsonify({"error": f"Error en la consulta: {str(e)}"}), 500
